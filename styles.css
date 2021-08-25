@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* transition: transform 1s; */
+
+}
+.hamburger {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+
+svg {
+    width: 10rem;
+    height: 10rem;
+}
+.hamburger svg line {
+    transition: all 500ms;
+}
+
+svg #big.open {
+    transform: translateX(1px) rotate(44.39deg);
+}
+
+svg #middle.open {
+    transform: translateX(-1px) translateY(11px) rotate(-47.39deg);
+}
+
+svg #small.open {
+    transform: translateX(-15px) translateY(10px) rotate(-47.39deg);
+}
+
